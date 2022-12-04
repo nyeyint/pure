@@ -1,4 +1,10 @@
 <?php
 require ("functions.php");
+require ("Database.php");
+require ("router.php");
 
-require ("routes.php");
+$config = require("config.php");
+
+$db = new Database($config['database']);
+
+
